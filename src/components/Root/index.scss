@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,greek');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:global(#root){
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.route-data {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin: auto;
+    max-width: 900px;
+    width: 70%;
+    box-sizing: border-box;
+   position: relative;
+}

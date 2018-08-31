@@ -1,0 +1,84 @@
+
+.root {
+    position: relative;
+    display: flex;
+}
+
+.field{
+
+
+    > label {
+        color: #474747;
+        display: block;
+        font-weight: 300;
+        text-transform: uppercase;
+       font-size: 14px;
+       pointer-events: none;
+       transition: transform 239ms;
+    }
+    &.empty{
+        > label{
+            transform: translate(5px, 100%);
+        }
+    }
+    > input {
+        padding: 8px;
+        font-size: 20px;
+        border: 1px solid #474747;
+        outline: 0;
+        font-family: Roboto,sans-serif;
+        &::placeholder {
+            font-size: 20px;
+            font-weight: 300;
+            transform: translateY(6px);
+            color: #d2d2d2;
+        }
+    }
+}
+
+.toast {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 34px 30px;
+    box-shadow: 0 4px 10px #cccccc;
+    margin-right: 30px;
+    background: #f8f8f8;
+    > .field:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .title {
+        margin: 0 0 26px;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.19);
+    }
+}
+
+
+.submit-button{
+    width: 50%;
+    background: transparent;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 23px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    margin-left: auto;
+    outline: 0;
+    border: 2px solid #262626;
+    color: #262626;
+    cursor: pointer;
+
+    // position: absolute;
+    // left: 0;
+    // bottom: -80%;
+
+    &:hover{
+        background: #262626;
+        color: white;
+    }
+}
